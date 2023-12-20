@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Hamburger Expert</title>
+  <link rel="icon" type="image/x-icon" href="Afbeeldingen/hamburgerexpert logo.png">
+  <link href="style.css" rel="stylesheet" type="text/css" />
+  <style>
+    td>img {
+      width: 100%;
+      height: 250px;
+      object-fit: contain;
+    }
+  </style>
+</head>
+
+<body>
+  <div id ="wrapper">
+    <header>
+      <div class="logo">
+        <a href="index.html"><img src="Afbeeldingen/hamburgerexpert logo.png" alt="logo" width="113px"
+            height="79px"></a>
+      </div>
+    </header>
+    <div class="navbar">
+      <ul>
+        <!-- voeg class="active" toe indien user op die pagina -->
+        <li><a class="active" href="vergelijken.html">Hamburger vergelijken</a></li>
+        <li><a href="infoperhamburger.html">Informatie per hamburger</a></li>
+        <li><a href="geschiedenis.html">Geschiedenis over hamburgers</a></li>
+        <li><a href="overons.html">Over ons</a></li>
+      </ul>
+    </div>
+    <main>
+        <h1 class="head-title">Hamburger vergelijken</h1>
+        <div class="vergelijkings-container">
+            <div class="'vergelijking">
+              <table class="table">
+                <tr>
+                  <th>Hamburger</th>
+                  <th width="300px">
+                    <select class="form-control" id="select1" onchange="item1(this.value)">
+                      <option value="0">-- Kies een hamburger --</option>
+                    </select>
+                  </th>
+                  <th width="300px">
+                    <select class="form-control" id="select2" onchange="item2(this.value)">
+                      <option value="0">-- Kies een hamburger --</option>
+                    </select>
+                  </th>
+                </tr>
+                <tr>
+                  <th>Afbeelding</th>
+                  <td>
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/65/No-Image-Placeholder.svg/1665px-No-Image-Placeholder.svg.png" id="img1" alt=" ">
+                  </td>
+                  <td>
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/65/No-Image-Placeholder.svg/1665px-No-Image-Placeholder.svg.png" id="img2" alt=" ">
+                  </td>
+                </tr>
+                <tr>
+                  <th>Restaurant</th>
+                  <td id="restaurant1">N/A</td>
+                  <td id="restaurant2">N/A</td>
+                </tr>
+                <tr>
+                  <th>Prijs</th>
+                  <td id="price1">N/A</td>
+                  <td id="price2">N/A</td>
+                </tr>
+                <tr>
+                  <th>Energie (KJ)</th>
+                  <td id="energiekj1">N/A</td>
+                  <td id="energiekj2">N/A</td>
+                </tr>
+                <tr>
+                  <th>Energie (kcal)</th>
+                  <td id="energiekcal1">N/A</td>
+                  <td id="energiekcal2">N/A</td>
+                </tr>
+                <tr>
+                  <th>Koolhydraten (g)</th>
+                  <td id="koolhydraten1">N/A</td>
+                  <td id="koolhydraten2">N/A</td>
+                </tr>
+                <tr>
+                  <th>Waarvan suikers (g)</th>
+                  <td id="suikers1">N/A</td>
+                  <td id="suikers2">N/A</td>
+                </tr>
+                <tr>
+                  <th>Vezels (g)</th>
+                  <td id="vezels1">N/A</td>
+                  <td id="vezels2">N/A</td>
+                </tr>
+                <tr>
+                  <th>Totaal vet(g)</th>
+                  <td id="vet1">N/A</td>
+                  <td id="vet2">N/A</td>
+                </tr>
+                <tr>
+                  <th>Waarvan verzadigd vet (g)</th>
+                  <td id="verzadigdvet1">N/A</td>
+                  <td id="verzadigdvet2">N/A</td>
+                </tr>
+                <tr>
+                  <th>Eiwit (g)</th>
+                  <td id="eiwit1">N/A</td>
+                  <td id="eiwit2">N/A</td>
+                </tr>
+              </table>
+            </div>
+          </div>
+
+    </main>
+  </div>
+
+  <div class="footer">
+    <div class="footer-container">
+      <div class="footer-row">
+        <div class="footer-col">
+          <h4>Ga naar</h4>
+          <ul>
+            <li><a href="vergelijken.html">Hamburger vergelijken</a></li>
+            <li><a href="infoperhamburger.html">Informatie per hamburger</a></li>
+            <li><a href="geschiedenis.html">Geschiedenis over hamburgers</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Help</h4>
+          <ul>
+            <li><a href="overons.html">Over ons</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="stelvoor.html">Stel een restaurant voor</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>Copyright &copy; 2023 Hamburger Expert. Alle rechten voorbehouden.</p>
+    </div>
+  </div>
+
+
+
+
+
+</body>
+
+<script src="Hamburgers/hamburger-data.js"></script>
+<script src="vergelijkenscript.js"></script>
+</html>
